@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ChoiceTextView: View {
+    let choiceText: String
+    let screenWidth = UIScreen.main.bounds.size.width
+    var color: Color
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(choiceText)
+            .font(.title2)
+            .fontWeight(.bold)
+            .frame(width: screenWidth/2-12, height: 160.0)
+            .background(color)
     }
 }
 
 struct ChoiceTextView_Previews: PreviewProvider {
     static var previews: some View {
-        ChoiceTextView()
+        ChoiceTextView(choiceText: "ChoiceText!", color: Color.blue)
     }
 }

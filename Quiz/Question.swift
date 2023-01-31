@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Question {
+    let questionText: String
+    let answersList: [String]
+    let correctAnswerIndex: Int
+}

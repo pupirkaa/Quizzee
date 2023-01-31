@@ -11,11 +11,16 @@ var playerScore = 0
 var questionNumber = 1
 
 struct ContentView: View {
+    let question = Question(
+            questionText: "What was the first computer bug?",
+            answersList: ["Ant 🐜", "Beetle 🪲", "Moth 🦟", "Fly 🪰"],
+            correctAnswerIndex: 2)
+    
     var body: some View {
         ZStack {
             backgroundPrimaryColor.ignoresSafeArea()
             VStack{
-                Text("What was the first computer bug?")
+                Text(question.questionText)
                     .font(.title)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
@@ -28,45 +33,41 @@ struct ContentView: View {
                     HStack {
                         Button(action: {
                             print("Tapped on 1")
+                            if question.correctAnswerIndex == 0 {
+                                playerScore+=1
+                            }
                         }, label: {
-                            Text("Ant 🐜")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .frame(width: screenWidth/2-12, height: 160.0)
-                                .background(Color.blue)
+                            ChoiceTextView(choiceText: question.answersList[0], color: Color.blue)
                             
                         }
                         )
                         Button(action: {
                             print("Tapped on 2")
+                            if question.correctAnswerIndex == 1 {
+                                playerScore+=1
+                            }
                         }, label: {
-                            Text("Fly 🪰")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .frame(width: screenWidth/2-12, height: 160.0)
-                                .background(Color.green)
+                            ChoiceTextView(choiceText: question.answersList[1], color: Color.green)
                         }
                         )
                     }
                     HStack{
                         Button(action: {
                             print("Tapped on 3")
+                            if question.correctAnswerIndex == 0 {
+                                playerScore+=1
+                            }
                         }, label: {
-                            Text("Moth 🦟")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .frame(width: screenWidth/2-12, height: 160.0)
-                                .background(Color.yellow)
+                            ChoiceTextView(choiceText: question.answersList[2], color: Color.yellow)
                         }
                         )
                         Button(action: {
                             print("Tapped on 4")
+                            if question.correctAnswerIndex == 0 {
+                                playerScore+=1
+                            }
                         }, label: {
-                            Text("Beetle 🪲")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .frame(width: screenWidth/2-12, height: 160.0)
-                                .background(Color.pink)
+                            ChoiceTextView(choiceText: question.answersList[3], color: Color.pink)
                         }
                         )
                     }

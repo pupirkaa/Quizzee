@@ -14,6 +14,8 @@
 		8C0DC332297FF3F600DEC91D /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0DC331297FF3F600DEC91D /* QuizUITests.swift */; };
 		8C0DC334297FF3F600DEC91D /* QuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0DC333297FF3F600DEC91D /* QuizUITestsLaunchTests.swift */; };
 		8C28063129883BD90014D259 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8C28063029883BD90014D259 /* Preview Content */; };
+		8C28063329883E870014D259 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C28063229883E870014D259 /* Question.swift */; };
+		8C280635298840780014D259 /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C280634298840780014D259 /* ChoiceTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		8C0DC331297FF3F600DEC91D /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		8C0DC333297FF3F600DEC91D /* QuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8C28063029883BD90014D259 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		8C28063229883E870014D259 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8C280634298840780014D259 /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				8C0DC317297FF3F500DEC91D /* ContentView.swift */,
 				8C0DC319297FF3F600DEC91D /* Assets.xcassets */,
 				8C0DC31B297FF3F600DEC91D /* Quiz.entitlements */,
+				8C28063229883E870014D259 /* Question.swift */,
+				8C280634298840780014D259 /* ChoiceTextView.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C28063329883E870014D259 /* Question.swift in Sources */,
 				8C0DC318297FF3F500DEC91D /* ContentView.swift in Sources */,
+				8C280635298840780014D259 /* ChoiceTextView.swift in Sources */,
 				8C0DC316297FF3F500DEC91D /* QuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
