@@ -1,9 +1,3 @@
-//
-//  QuizApp.swift
-//  Quiz
-//
-//  Created by Irina on 24.01.23.
-//
 
 import SwiftUI
 
@@ -11,7 +5,7 @@ import SwiftUI
 struct QuizApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WellcomeView()
         }
     }
 }
